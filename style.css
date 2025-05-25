@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Share+Tech&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+--secondary: "Teachers", sans-serif;
+--logo: "Jersey 10", sans-serif;
+--primary: "Share Tech", sans-serif;
+}
+
+body{
+    color: white;
+    background-color:darkslategrey;
+    font-family: var(--secondary);
+    font-size: 1.5em;
+    padding: 3em;
+}
+
+h1{
+    font-family: var(--primary);
+    font-size: 3em;
+    text-align: center;
+}
+
+#sub-heading-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub-heading-item{
+display: flex;
+gap: 10px;
+}
+
+.sub-heading-icon{
+    img {
+        width: 32px;
+        filter: invert(100%);
+    }
+}
+
+.selected{
+    background-color: red;
+}
+
+#individual-section{
+    margin-left: 2em;
+}
+
+#tables-wrapper{
+    display: flex;
+    flex-wrap:wrap;
+gap: 1em;
+}
+
+.table {
+    max-width: 350px;
+    display: block;
+    border: 1px solid black;
+    padding: 1em;
+    font-size: .75em;
+p {
+    font-style: italic;
+    margin: 0px;
+}
+}
+
+
+/* Draggable Div*/
+
+#mydiv {
+    position: fixed;
+right: 0;
+bottom: 0;
+width: 100px;
+height: 125px;
+    z-index: 9;
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(2px);
+    text-align: center;
+    border: 1px solid #d3d3d3;
+  }
+  
+  #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color:darkslateblue;
+    font-family: var(--primary);
+
+  }
+
+  #timer-buttons-wrapper{
+
+  }
