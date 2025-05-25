@@ -2,16 +2,12 @@
 
 <!--
 GAMEPLAY NOTES
-- timer reset button doesn't work
 - Update the tables with the new google doc tables 
-- Add up the tables and display the total number
-- Add prompts to fill out during the 15 minutes like "motivation" and "background"
-- Add a button that says: "Finished early?"  with some writing prompts
--Rename the "name" and "label" for the textareas
-
 -->
 
 <link rel="stylesheet" href="style.css">
+
+
 <body>
 
 <div id="heading">
@@ -54,142 +50,142 @@ GAMEPLAY NOTES
 
     <details open>
         <summary><h2>The lists</h2></summary>
-
+<p>These lists will help you plan out a character and story arc for your radio call. Use them as you like, and feel free to change any of them if you have an idea you like better.</p>
     <div id="tables-wrapper">
-        <div class="table"  onclick="testing(0)">
+        <div class="table"  onclick="tableClickEvent(0)">
             <p>You mainly live in an environment that's...</p>
     <table id="table-0"> 
         <tr>
             <td>0</td>
-            <td>Across several asteroids</td>
+            <td>across several asteroids</td>
         </tr>
         <tr>
             <td>1</td>
-            <td>Barren</td>
+            <td>barren</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>Underground</td>
+            <td>underground</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Mountainous</td>
+            <td>mountainous</td>
         </tr>
         <tr>
             <td>4</td>
-            <td>Desert</td>
+            <td>desert</td>
         </tr>
         <tr>
             <td>5</td>
-            <td>Underwater</td>
+            <td>underwater</td>
         </tr>
         <tr>
             <td>6</td>
-            <td>Volcanic</td>
+            <td>volcanic</td>
         </tr>
         <tr>
             <td>7</td>
-            <td>Lush</td>
+            <td>lush</td>
         </tr>
         <tr>
             <td>8</td>
-            <td>Arctic</td>
+            <td>arctic</td>
         </tr>
         <tr>
             <td>9</td>
-            <td>In the air</td>
+            <td>in the air</td>
         </tr>
 
     </table>
     </div>
 
-    <div class="table" onclick="testing(1)">
+    <div class="table" onclick="tableClickEvent(1)">
     <table id="table-1"> <p>You were chosen becaue you...</p>
         <tr>
             <td>0</td>
-            <td>Are the only one left</td>
+            <td>are the only one left</td>
         </tr>
         <tr>
             <td>1</td>
-            <td>Have famous parents</td>
+            <td>have famous parents</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>Are famous</td>
+            <td>know how to operate the radio</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Lead the society</td>
+            <td>lead the society</td>
         </tr>
         <tr>
             <td>4</td>
-            <td>Took over the airwaves</td>
+            <td>took over the airwaves</td>
         </tr>
         <tr>
             <td>5</td>
-            <td>Are an expert about the other planet</td>
+            <td>are an expert about the other planet</td>
         </tr>
         <tr>
             <td>6</td>
-            <td>Know how to operate the radio</td>
+             <td>are famous</td>
         </tr>
         <tr>
             <td>7</td>
-            <td>Are an activist</td>
+            <td>are an activist</td>
         </tr>
         <tr>
             <td>8</td>
-            <td>Won a contest</td>
+            <td>won a contest</td>
         </tr>
         <tr>
             <td>9</td>
-            <td>Are an elder or respected person</td>
+            <td>are an elder or respected person</td>
         </tr>
 
     </table>
     </div>
 
-    <div class="table" onclick="testing(2)">   
+    <div class="table" onclick="tableClickEvent(2)">   
     <table id="table-2"> <p>People have asked you to get...</p>
         <tr>
             <td>0</td>
-            <td>Animals</td>
+            <td>animals</td>
         </tr>
         <tr>
             <td>1</td>
-            <td>Food</td>
+            <td>food</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>Water</td>
+            <td>water</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Building materials</td>
+            <td>building materials</td>
         </tr>
         <tr>
             <td>4</td>
-            <td>Information (spying)</td>
+            <td>information (spying)</td>
         </tr>
         <tr>
             <td>5</td>
-            <td>Technology</td>
+            <td>technology</td>
         </tr>
         <tr>
             <td>6</td>
-            <td>Stability in space politics</td>
+            <td>stability in space politics</td>
         </tr>
         <tr>
             <td>7</td>
-            <td>Residents or tourism</td>
+            <td>residents or tourism</td>
         </tr>
         <tr>
             <td>8</td>
-            <td>Plants</td>
+            <td>plants</td>
         </tr>
         <tr>
             <td>9</td>
-            <td>Cultural knowledge</td>
+            <td>cultural knowledge</td>
         </tr>
 
   
@@ -197,95 +193,95 @@ GAMEPLAY NOTES
     <p>But you really want... (Select an item again. You may agree with the previous item!)</p>
     </div>
 
-    <div class="table" onclick="testing(4)">
+    <div class="table" onclick="tableClickEvent(4)">
     <table id="table-4"> <p>Unfortunately...</p>
 
         <tr>
             <td>0</td>
-            <td>You know they can't be trusted</td>
+            <td>they're at war in their part of the universe</td>
         </tr>
         <tr>
             <td>1</td>
-            <td>They are at war with someone else in the galaxy</td>
+            <td>your planets have a turbulent history</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>Your planets have spoken before and have a history</td>
+            <td>your planets used to be one planet that got split in half</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Your planets are one planet that split in half eons ago</td>
+            <td>they're the largest economy in the galaxy</td>
         </tr>
         <tr>
             <td>4</td>
-            <td>They are much more advanced than you in some way</td>
+            <td>they have a valued item from your planet</td>
         </tr>
         <tr>
             <td>5</td>
-            <td>You have a valued item or resource from their planet</td>
+            <td>they're home to the itnergalactic Thieve's Guild</td>
         </tr>
         <tr>
             <td>6</td>
-            <td>You've sent emissaries to their planet, but haven't heard back</td>
+            <td>your planet actually needs two things (choose another item from the third list)</td>
         </tr>
         <tr>
             <td>7</td>
-            <td>Your planet actually needs two things (pick another item from the previous list)</td>
+            <td>you are an AI following your last program</td>
         </tr>
         <tr>
             <td>8</td>
-            <td>You are actually an AI following your last programmed order</td>
+            <td>you do not have what the other planet is asking for</td>
         </tr>
         <tr>
             <td>9</td>
-            <td>You don't have what the other planet is asking for</td>
+            <td>emissaries from your planet visited theirs and haven't been back home</td>
         </tr>
 
     </table>
     </div>
 
 
-    <div class="table" onclick="testing(5)">
+    <div class="table" onclick="tableClickEvent(5)">
         <table id="table-5"> <p>In the end...</p>
             <tr>
                 <td>1</td>
-                <td>Sunflares make your connection degrade over time.</td>
+                <td>sunflares make your connection degrade over time</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>You make a concession of some kind.</td>
+                <td>you make a concession of some kind</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>An asteroid heads for your planet.</td>
+                <td>an asteroid heads for your planet</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>The sun you both orbit starts to explode.</td>
+                <td>the sun you both orbit starts to explode</td>
             </tr>
             <tr>
                 <td>5</td>
-                <td>Someone's entered the room you're broadcasting from.</td>
+                <td>someone's entered the room you're broadcasting from</td>
             </tr>
             <tr>
                 <td>6</td>
-                <td>Inclement weather starts to impact the place you're in.</td>
+                <td>inclement weather starts to impact the place you're in</td>
             </tr>
             <tr>
                 <td>7</td>
-                <td>The technology you're using starts to fail, and you can only use one syllable at a time.</td>
+                <td>the technology you're using starts to fail, and you can only use one syllable at a time</td>
             </tr>
             <tr>
                 <td>8</td>
-                <td>??</td>
+                <td>you must switch places on your planets</td>
             </tr>
             <tr>
                 <td>9</td>
-                <td>??</td>
+                <td>you've discovered a way to establish a long term connection</td>
             </tr>
             <tr>
                 <td>0</td>
-                <td>??</td>
+                <td>you're related in some way</td>
             </tr>
         </table>
         </div>
@@ -294,40 +290,41 @@ GAMEPLAY NOTES
     
 </details>
 <h2>Your character sheet</h2>
-<p>Use the lists above to create your character and the story arc for your call. The other player is planning their own story arc, and the magic is where those two intersect. Without speaking to the other player, plan here:</p>
+<p>Try to write for the full amount of time. Even if you don't know what to write, sometimes it can be helpful to just write "I don't know what to write here...".</p>
 
-<div class="character-sheet-info" style="display:flex; gap: 20px;">
+<h3>From the lists...</h3>
+<!-- https://css-tricks.com/auto-growing-inputs-textareas/ -->
+You live in an environment that's mainly <label class="input-sizer"><input type="text" id="input-table-0" onInput="this.parentNode.dataset.value = this.value" size="4" placeholder="..."></label>.
+You were chosen because you <label class="input-sizer"><input type="text" id="input-table-1" onInput="this.parentNode.dataset.value = this.value" size="4" placeholder="..."></label>.
+Your people would like you to get  <label class="input-sizer"><input type="text" id="input-table-2" onInput="this.parentNode.dataset.value = this.value" size="4" placeholder="..."></label>.
+But really, you want  <label class="input-sizer"><input type="text" id="input-table-3" onInput="this.parentNode.dataset.value = this.value" size="4" placeholder="..."></label>.
+Unfortunately,  <label class="input-sizer"><input type="text" id="input-table-4" onInput="this.parentNode.dataset.value = this.value" size="4" placeholder="..."></label>.
+In the end  <label class="input-sizer"><input type="text" id="input-table-5" onInput="this.parentNode.dataset.value = this.value" size="4" placeholder="..."></label>.
 
-    <div>
-<label for="who">Who are you?</label>
-<textarea style="display:block" name="who" rows="4" cols="50">
-Tell your story...
-</textarea> 
+<div class="character-sheet-info">
+<div>
+<label for="who">Who are you? What are your goals and motivations?</label>
+<textarea name="who"></textarea> 
 </div>
 
 <div>
-    <label for="who">Where do you live? What does your daily life look like?</label>
-    <textarea style="display:block" name="who" rows="4" cols="50">
-    
-    </textarea> 
+    <label for="where">Where do you live? What does your daily life look like?</label>
+    <textarea name="where"></textarea> 
     </div>
     
 
     <div>
-        <label for="who">Where do they live? What is their life like?</label>
-        <textarea style="display:block" name="who" rows="4" cols="50">
-        
-        </textarea> 
+        <label for="how">How do you feel about being part of this mission? What is your motivation to participate?</label>
+        <textarea name="how"></textarea> 
         </div>
         
 
 </div>
-
-
-
-
 </div>
 </details>
+
+
+
 
 <h2>When you're done setting up... </h2>
 <p>Wait for the other player to finish. Once you're both done, review the following (it’s OK if you go over the 15 minutes):</p>
@@ -342,6 +339,8 @@ Tell your story...
     <li>Remember that these are just suggestions. Ignore any rules in favor of enjoyable gameplay!</li>
     <li>Whoever has the higher "list sum" goes first. If there's a tie, then whoever is older goes first.</li>
 </ul>
+
+<p>Your list sum: <span id="turn-score-span">0</span></p>
 <p>When you’re ready, restart the timer for 15 minutes and play!</p>
 
 
@@ -373,15 +372,39 @@ Tell your story...
 
 <script>
 
+var turn_score = 0;
+
     var is_timing = false;
     var seconds_ones = 0;
 
-    let character_sheet_array = ["...","...","...","...","..."];
+    let character_sheet_array = ["","","","","",""];
+    let character_sheet_input_array = [];
+
+    for(var i = 0; i < character_sheet_array.length; i++){
+        character_sheet_input_array[i] = document.getElementById("input-table-" + i);
+     
+    }
 
     var table_two_control = 0;
 
+function check_turn_score(){
+
+
+//count the numbers to determine who goes first
+var selected_items = document.getElementsByClassName("selected");
+turn_score = 0;
+
+for(var i =0; i < selected_items.length; i++){
+    turn_score += parseInt(selected_items[i].getElementsByTagName("td")[0].firstChild.data);
+}
+
+document.getElementById("turn-score-span").innerHTML = turn_score;
+
+}
+
+
 //TABLE elements
-function testing(table_id){
+function tableClickEvent(table_id){
 
     if(is_timing){
         var table_clicked = document.getElementById("table-" + table_id);
@@ -416,10 +439,6 @@ selected_count++;
                     character_sheet_array[parseInt(table_id)] = rows[i].getElementsByTagName("td")[1].firstChild.data;
                 }
 
-
-
-              
-                // character_sheet_array[parseInt(table_id)] = character_sheet_array[parseInt(table_id)][0].toLowerCase();
             }
 
 
@@ -427,7 +446,12 @@ selected_count++;
     }
 
 
-console.log(character_sheet_array)
+    for(var i = 0; i < character_sheet_array.length; i++){
+           character_sheet_input_array[i].value = character_sheet_array[i];
+           character_sheet_input_array[i].dispatchEvent(new Event('input', { bubbles: true }));
+    }
+
+    check_turn_score();
 
 }
 
@@ -484,7 +508,7 @@ console.log(character_sheet_array)
     var timer_control_button = document.getElementById("timer-control");
     var timer_reset_button = document.getElementById("timer-reset");
     var timer_display_span = document.getElementById("time");
-    let x = 0;
+    var x = 0;
     
 
     function startTime() {
@@ -537,12 +561,14 @@ console.log(character_sheet_array)
 
 
     function resetTime(){
+console.log(x)
         timer_control_button.disabled = false;
         timer_reset_button.disabled = "true";
-        time_display_span.innerHTML = "15:00";
+        timer_display_span.innerHTML = "15:00";
+        is_timing = false;
 
         clearInterval(x);
-        x=undefined;
+       
     }
     </script>
 
