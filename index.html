@@ -1,5 +1,16 @@
 <html>
 
+<!--
+GAMEPLAY NOTES
+- timer reset button doesn't work
+- Update the tables with the new google doc tables 
+- Add up the tables and display the total number
+- Add prompts to fill out during the 15 minutes like "motivation" and "background"
+- Add a button that says: "Finished early?"  with some writing prompts
+-Rename the "name" and "label" for the textareas
+
+-->
+
 <link rel="stylesheet" href="style.css">
 <body>
 
@@ -25,14 +36,24 @@
 </div>
 
 <p>Make sure both players have this web page up on a device, or have printed versions. If you're using the printed version, you'll need a timer that you can both view.</p> 
-<p>Set a timer for 15 minutes, and make sure both players can see the “seconds” counting down. There's a timer at the bottom of this page you can drag to a more convenient position and use. This will be your time to set up the game, and later it will time the actual gameplay too. You’ll each work on the next section separately. Start the shared timer, or your separate timers at the same time (it's okay if you're a few seconds off from each other), then continue individually: </p>
+<p>Set a timer for 15 minutes, and make sure both players can see the “seconds” counting down. There's a timer at the top of this page you can use and drag to a more convenient position. This will be your time to set up the game, and later it will time the actual gameplay too. You’ll each work on the next section separately. Start the shared timer, or your separate timers at the same time (it's okay if you're a few seconds off from each other).</p>
 
-<div id="individual-section"> 
+
+<details>
+<summary><h2>When you're ready to set up, review this section.</h2></summary>
+<div class="border-left">
+<details open>
+    <summary><h2>Background</h2></summary>
+
 
     <p><i>In the vastness of space, planets exist so far apart that centuries pass in intergalactic silence. You’ve watched the stars and other celestial objects move across your skies for generations, but you’ve heard nothing, until today. Through the white noise, there’s a signal. Your people have decided to respond to it, and science estimates you only have 15 minutes to talk, and you’re chosen to sit at the microphone.</i></p>
     <p>The timer counting more than the time left for you to set up your backstory. You’ll use it to select items from the list below by looking at the seconds area of the timer and using the “ones” digit. For example, “5” can be found in 15, 35, 55, etc. </p>
     <p>Using the timer, select items from each list below to finish the following sentences. This will be the basis of your backstory.</p>
     <p>If anything doesn’t make sense or feel right to you, change it. This is your story, and these are just guidelines to help you. On this site, you can also select or tap the table and it will automatically highlight the option based on the timer's current time.</p>
+</details>
+
+    <details open>
+        <summary><h2>The lists</h2></summary>
 
     <div id="tables-wrapper">
         <div class="table"  onclick="testing(0)">
@@ -176,8 +197,8 @@
     <p>But you really want... (Select an item again. You may agree with the previous item!)</p>
     </div>
 
-    <div class="table" onclick="testing(3)">
-    <table id="table-3"> <p>Unfortunately...</p>
+    <div class="table" onclick="testing(4)">
+    <table id="table-4"> <p>Unfortunately...</p>
 
         <tr>
             <td>0</td>
@@ -185,7 +206,7 @@
         </tr>
         <tr>
             <td>1</td>
-            <td>They are at ware with someone else in the galaxy</td>
+            <td>They are at war with someone else in the galaxy</td>
         </tr>
         <tr>
             <td>2</td>
@@ -224,8 +245,8 @@
     </div>
 
 
-    <div class="table" onclick="testing(4)">
-        <table id="table-4"> <p>In the end...</p>
+    <div class="table" onclick="testing(5)">
+        <table id="table-5"> <p>In the end...</p>
             <tr>
                 <td>1</td>
                 <td>Sunflares make your connection degrade over time.</td>
@@ -270,8 +291,58 @@
         </div>
     
     </div>
+    
+</details>
+<h2>Your character sheet</h2>
+<p>Use the lists above to create your character and the story arc for your call. The other player is planning their own story arc, and the magic is where those two intersect. Without speaking to the other player, plan here:</p>
+
+<div class="character-sheet-info" style="display:flex; gap: 20px;">
+
+    <div>
+<label for="who">Who are you?</label>
+<textarea style="display:block" name="who" rows="4" cols="50">
+Tell your story...
+</textarea> 
 </div>
 
+<div>
+    <label for="who">Where do you live? What does your daily life look like?</label>
+    <textarea style="display:block" name="who" rows="4" cols="50">
+    
+    </textarea> 
+    </div>
+    
+
+    <div>
+        <label for="who">Where do they live? What is their life like?</label>
+        <textarea style="display:block" name="who" rows="4" cols="50">
+        
+        </textarea> 
+        </div>
+        
+
+</div>
+
+
+
+
+</div>
+</details>
+
+<h2>When you're done setting up... </h2>
+<p>Wait for the other player to finish. Once you're both done, review the following (it’s OK if you go over the 15 minutes):</p>
+<ul>
+<li>The game takes place in 5 minute intervals, noted by the moon on the timer moving from new moon to full moon and back to new moon. During each phase, you should keep in mind what information to share.
+    <ul>
+        <li>First 5 minutes: Introductions and getting to know the other planet (tables 1-3).</li>
+            <li>Second 5 minutes: Discussing "twists" (table 4).</li>
+                <li>Last 5 minutes: Resolve your ending if possible (table 5).</li>
+    </ul> 
+    <li>If a player makes a suggestion or assertion, the other player shouldn't deny it. For example, if someone says, "I hear you're hosting the thieve's guild," you don't have to <i>admit</i>, but you do have to agree. Reword the situation back to them however you see fit, but don't shut down each other's ideas.</li>
+    <li>Remember that these are just suggestions. Ignore any rules in favor of enjoyable gameplay!</li>
+    <li>Whoever has the higher "list sum" goes first. If there's a tie, then whoever is older goes first.</li>
+</ul>
+<p>When you’re ready, restart the timer for 15 minutes and play!</p>
 
 
 <div id="mydiv">
@@ -281,8 +352,20 @@
     <button id="timer-control" onClick="startTime()">▶</button>
     <button id="timer-reset" disabled onClick="resetTime()">↻</button>
 </div>
+
+<div class="moon">
+    <div class="disc darkened" id="disc"></div>
   </div>
 
+  </div>
+
+
+  <footer>
+
+<p>Made for LIS 561: Indigenous Storytelling in a Digital Age. May 2025.</p>
+<p><a href="https://www.flaticon.com/free-icons/box" title="box icons">Box icons created by ibrandify</a> | <a href="https://www.flaticon.com/free-icons/astronaut-helmet" title="astronaut helmet icons">Astronaut helmet icons created by Creatype</a> | <a href="https://www.flaticon.com/free-icons/watch" title="watch icons">Watch icons created by Freepik</a></p>
+
+  </footer>
 </body>
 
 
@@ -295,21 +378,46 @@
 
     let character_sheet_array = ["...","...","...","...","..."];
 
+    var table_two_control = 0;
+
 //TABLE elements
 function testing(table_id){
 
     if(is_timing){
         var table_clicked = document.getElementById("table-" + table_id);
         var rows = table_clicked.getElementsByTagName("tr");
+
+        var selected_count = 0;
+
+        if(parseInt(table_id) == 2){ //let them pick two items if it's table two
+        table_two_control++;
+        for(var i = 0; i < rows.length; i++){
+        if(rows[i].classList.contains("selected")){
+selected_count++;
+        }
+        }
+    }
+ 
         
         for(var i = 0; i < rows.length; i++){
+            if(parseInt(table_id) != 2 || selected_count > 1){ //let them pick two items if it's table two
             rows[i].classList.remove("selected");
-            if(i == seconds_ones){
-
-            
-
+}          
+ if(i == seconds_ones){
                 rows[i].classList.add("selected");
-                character_sheet_array[parseInt(table_id)] = rows[i].getElementsByTagName("td")[1].firstChild.data;
+
+                if(parseInt(table_id) == 2){
+                    if(table_two_control % 2 == 0){
+                        character_sheet_array[parseInt(table_id)+1] = rows[i].getElementsByTagName("td")[1].firstChild.data;
+} else {
+    character_sheet_array[parseInt(table_id)] = rows[i].getElementsByTagName("td")[1].firstChild.data;
+}
+                } else {
+                    character_sheet_array[parseInt(table_id)] = rows[i].getElementsByTagName("td")[1].firstChild.data;
+                }
+
+
+
               
                 // character_sheet_array[parseInt(table_id)] = character_sheet_array[parseInt(table_id)][0].toLowerCase();
             }
@@ -380,6 +488,10 @@ console.log(character_sheet_array)
     
 
     function startTime() {
+
+        document.getElementById("disc").classList.add("moving_moon");
+        document.getElementById("disc").classList.remove("darkened");
+
         is_timing = true;
         timer_control_button.disabled = "true";
         timer_reset_button.disabled = false;
@@ -417,6 +529,8 @@ console.log(character_sheet_array)
             clearInterval(x);
         timer_display_span.innerHTML = "00:00";
         is_timing = false;
+        document.getElementById("disc").classList.remove("moving_moon");
+        document.getElementById("disc").classList.add("darkened");
         }
         }, 1000); 
     }
